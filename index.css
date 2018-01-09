@@ -47,10 +47,23 @@ html, body {
         opacity: 1;
     }
 }
+@keyframes rgb {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
 .logo {
     width: 256px;
     height: 256px;
     animation: jumpIn 1s;
+}
+.logo_post {
+    width: 256px;
+    height: 256px;
+    animation: rgb 10s infinite;
 }
 h1 {
     color: white;
