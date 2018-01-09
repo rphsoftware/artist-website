@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html, body {
+    background-color: #222;
+    height: 100%;
+    overflow-y: hidden;
+}
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    height: 100%;
+}
+.title {
+
+}
+@keyframes jumpIn {
+    0% {
+        width: 512px;
+        height: 512px;
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        width: 128px;
+        height: 128px;
+        filter: hue-rotate(180deg);
+    }
+    100% {
+        width: 256px;
+        height: 256px;
+        filter: hue-rotate(360deg);
+    }
+}
+@keyframes widgetFadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    50% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+.logo {
+    width: 256px;
+    height: 256px;
+    animation: jumpIn 1s;
+}
+h1 {
+    color: white;
+    font-size: 48px;
+}
+h3 {
+    color: white;
+    font-size: 24px;
+}
+.primary-text {
+    text-align: center;
+}
+.widget {
+    animation: widgetFadeIn 3s;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.fancyLink {
+    color: #00ffe3;
+    font-size: 24px;
+}

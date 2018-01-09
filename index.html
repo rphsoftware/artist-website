@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Artist</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 <body>
-    <h1>Website in progress</h1>
+    <div class="flex-wrapper" style="display: none;">
+        <div class="logo">
+            <svg viewBox="0 0 32 32" id="svg2" version="1.1">
+                <defs id="defs4">
+                    <linearGradient
+                            id="linearGradient4160">
+                        <stop
+                                id="stop4150"
+                                offset="0"
+                                style="stop-color:#ffb86d;stop-opacity:1" />
+                        <stop
+                                id="stop4152"
+                                offset="1"
+                                style="stop-color:#6bedb2;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient
+                            xlink:href="#linearGradient4160"
+                            id="linearGradient825"
+                            gradientUnits="userSpaceOnUse"
+                            x1="6.3565812"
+                            y1="978.22614"
+                            x2="27.545183"
+                            y2="978.22614"
+                            gradientTransform="scale(0.94390369,1.0594301)" />
+                </defs>
+                <g
+                        id="layer1"
+                        transform="translate(0,-1020.3622)">
+                    <path style="fill:url(#linearGradient825);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                          id="path822"
+                          d="m 24.685547,1026.3613 c -0.578273,0 -1.171885,0.3432 -1.783203,1.0293 L 6,1046.3613 h 4.509766 l 12.392578,-13.8789 v 13.8789 H 26 v -18.2461 c 0,-0.5377 -0.123262,-0.964 -0.371094,-1.2793 -0.247831,-0.3152 -0.56335,-0.4746 -0.943359,-0.4746 z" />
+                </g>
+            </svg>
+        </div>
+        <div class="primary-text" style="display: none;">
+            <h1>Artist</h1>
+            <h3>Artist is a discord bot made with functionality in mind.</h3>
+            <a href="https://discordbots.org/bot/375208346896171008" class="widget">
+                <img src="https://discordbots.org/api/widget/375208346896171008.svg" alt="Discord Bots" />
+            </a><br />
+            <a class="fancyLink" href="reference.html">
+                Bot reference
+            </a>
+        </div>
+    </div>
+    <script>
+        document.getElementsByClassName('flex-wrapper')[0].style = 'display: flex';
+        setTimeout(function() {
+            document.getElementsByClassName('primary-text')[0].style = 'display: block;';
+        }, 1000);
+    </script>
+    <noscript>
+        <h1>Enable JavaScript</h1>
+    </noscript>
 </body>
 </html>
